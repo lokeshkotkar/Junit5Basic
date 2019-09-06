@@ -9,7 +9,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)  // by using this line only one instatce of MathUtilsTest class is created while running each testcase
-//@TestInstance(TestInstance.Lifecycle.PER_METHOD) // this is default behavior of junit means before running of each test cases each time instance of MathUtilsTest is created
+												// if we made this then no need to declare method as static which is used in (the method which is annotate with @BeforeAll annotation)	
+//@TestInstance(TestInstance.Lifecycle.PER_METHOD)  // this is default behavior of junit means before running of each test cases each time instance of MathUtilsTest is created
 class MathUtilsTest {
 	
 	MathUtils util;
